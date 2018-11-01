@@ -7,7 +7,7 @@ import java.util.Comparator;
  * Класс для тестирования класса SearchTree
  */
 
-public class TesterTree implements Comparable<TesterTree> {
+public class TesterTrees implements Comparable<TesterTrees> {
 
     private Integer num;
 
@@ -20,7 +20,7 @@ public class TesterTree implements Comparable<TesterTree> {
     }
 
 
-    public TesterTree(int num){
+    public TesterTrees(int num){
         this.num = num;
     }
 
@@ -28,9 +28,9 @@ public class TesterTree implements Comparable<TesterTree> {
         return  num.toString();
     }
     //компаратор анонимного класса
-    public static final Comparator<TesterTree> comp = new Comparator<>() {
+    public static final Comparator<TesterTrees> comp = new Comparator<>() {
         @Override
-        public int compare(TesterTree o1, TesterTree o2) {
+        public int compare(TesterTrees o1, TesterTrees o2) {
             if(o1.num > o2.num){
                 return 1;
             }
@@ -43,7 +43,7 @@ public class TesterTree implements Comparable<TesterTree> {
 
 
     @Override
-    public int compareTo(TesterTree o){
+    public int compareTo(TesterTrees o){
         if(this.num > o.num){
             return 1;
         }
