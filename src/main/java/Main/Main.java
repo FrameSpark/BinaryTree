@@ -26,9 +26,9 @@ public class Main {
 
         tree.print();
 
-        System.out.println("Удаление ключа 5");
-        test = new TesterTrees(5);
-        tree.removeNode(test);
-        tree.print();
+        //System.out.println("Удаление ключа 5");
+        //test = new TesterTrees(5);
+        //tree.removeNode(test);
+        //tree.print();
     }
 }
